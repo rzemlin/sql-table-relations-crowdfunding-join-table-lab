@@ -5,20 +5,17 @@ category TEXT,
 funding_goal NUMERIC,
 start_date INTEGER,
 end_date INTEGER
-)
-;
+);
 
 CREATE TABLE users (
 id INTEGER PRIMARY KEY,
-name TEXT,
-age INTEGER
-)
-;
+age INTEGER,
+name TEXT
+);
 
 CREATE TABLE pledges (
 id INTEGER PRIMARY KEY,
 amount NUMERIC,
 user_id INTEGER,
 project_id INTEGER
-)
-;
+);
